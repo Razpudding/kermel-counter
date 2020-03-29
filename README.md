@@ -10,15 +10,20 @@ This kermel counter will count kermels for kermits while running on ker power.
 ## Setup
 
 ### Hardware Components
-- GPS tracking module
-- 2G network module
+- GPS module 
+- 2G network module 
 - Computing module (arduino or rPi)
-- Fysical input to specify kermit (button array?)
+- Physical input to specify kermit (button array?)
 
 ### Software Components
-- GPS logger (Python)
-- 2G Communication programme (Python)
-- GPS->kermel calculator (Python)
+- GPS logger (C#) ✧
+- 2G Communication programme (C#) ✆
 - Aggregation Server (Javascript)
+- GPS->kermel calculator (Python)
 - Front-end for insights into usage (Javascript)
 
+### Data flow
+1. System is turned on when Ker is turned on
+2. User is selected
+3. GPS logger tracks ker movement
+4. 2G module sends GPS data to Aggregation Server 
